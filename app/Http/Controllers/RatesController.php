@@ -10,6 +10,15 @@ class RatesController extends Controller
     protected $data;
 
 
+    public function History()
+    {
+
+    }
+
+
+
+
+
     private function getApi()
     {
         $api = file_get_contents('https://www.cbr-xml-daily.ru/daily_json.js');
@@ -17,7 +26,7 @@ class RatesController extends Controller
     }
 
 
-    private function SelectData(array $valutes)
+    private function SelectRates(array $valutes)
     {
         $data = [];
         $rates = $this->api->Valute;
