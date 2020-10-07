@@ -10,15 +10,6 @@ class RatesController extends Controller
     protected $data;
 
 
-    public function History()
-    {
-
-    }
-
-
-
-
-
     private function getApi()
     {
         $api = file_get_contents('https://www.cbr-xml-daily.ru/daily_json.js');
