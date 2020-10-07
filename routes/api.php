@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/exchange-rates', 'RatesController@showLastRate');
+Route::get('/exchange-rates', 'RatesController@Lasting');
 
-Route::get('/exchange-rates/history/', 'RatesController@showRatesHistory');
+Route::get('/exchange-rates/history/', 'RatesController@History');
